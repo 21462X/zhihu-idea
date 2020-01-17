@@ -39,7 +39,7 @@ public interface SpecialMapper {
             @Result(property = "followersCount",column = "followers_count",javaType = Integer.class),
             @Result(property = "updated",column = "updated",javaType = Date.class),
             @Result(property = "sections",column = "special_id",
-            many = @Many(select = "com.scs.mobile.zhihu.api.mapper.SectionMapper.getSectionsBySpecialId")),
+                    many = @Many(select = "com.scs.mobile.zhihu.api.mapper.SectionMapper.getSectionsBySpecialId")),
 
     })
     List<Map> selectAll();

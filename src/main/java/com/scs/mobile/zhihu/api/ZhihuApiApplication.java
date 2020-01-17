@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 
 @SpringBootApplication
-@MapperScan("com.scs.zhihu.api.mapper")
+@MapperScan("com.scs.mobile.zhihu.api.mapper")
 public class ZhihuApiApplication {
 
     public static void main(String[] args) {
